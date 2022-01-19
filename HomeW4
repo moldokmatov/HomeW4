@@ -1,0 +1,21 @@
+SELECT * FROM IPhone;
+
+SELECT * FROM IPhone WHERE namuFacture IN('Apple','Samsung') ;
+
+SELECT * FROM IPhone WHERE namuFacture = 'Apple' AND price < 75000;
+
+SELECT * FROM IPhone WHERE price >= 46000;
+
+SELECT * FROM IPhone MAX(price)  LIMIT 2;
+
+SELECT MIN(productName) FROM IPhone;
+
+SELECT * FROM IPhone WHERE isDiscounted = true;
+
+SELECT * FROM IPhone WHERE isDiscounted = false;
+
+SELECT price FROM IPhone  ORDER BY price DESC ;
+
+SELECT SUM(price) FROM IPhone ;
+
+SELECT * FROM IPhone WHERE IPhone.productCount <= 2;
